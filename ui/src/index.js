@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import StepContext from './stepContext';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StepContext>
+    <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </StepContext>,
   document.getElementById('root')
 );
 
